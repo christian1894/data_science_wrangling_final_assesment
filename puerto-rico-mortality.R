@@ -9,3 +9,6 @@ txt = pdf_text(fn)
 x = str_split(txt[9], '\n')
 class(x)
 length(x)
+s = x[[1]]
+class(s)
+length(s)
