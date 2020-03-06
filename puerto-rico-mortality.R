@@ -12,3 +12,6 @@ length(x)
 s = x[[1]]
 class(s)
 length(s)
+s = str_trim(s)
+header_index = str_which(s, "2015")[1]
+header_index
