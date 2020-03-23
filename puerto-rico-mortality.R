@@ -14,4 +14,15 @@ class(s)
 length(s)
 s = str_trim(s)
 header_index = str_which(s, "2015")[1]
-header_index
+tmp = str_split(s[header_index], "\\s+", simplify = TRUE)
+month = tmp[1]
+header = tmp[-1]
+header[3]
+
+total_index = str_which(s, "Total")
+total_index
+
+n = str_count(s, "\\d+")
+sum(n == 1)
+
+
