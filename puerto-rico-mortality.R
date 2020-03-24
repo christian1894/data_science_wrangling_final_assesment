@@ -24,5 +24,6 @@ total_index
 
 n = str_count(s, "\\d+")
 sum(n == 1)
-
-
+out <- c(1:header_index, which(n==1), tail_index:length(s))
+s <- s[-out]
+length(s)
